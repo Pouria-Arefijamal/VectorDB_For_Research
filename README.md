@@ -5,8 +5,8 @@ the **exact PDF page** and the **reference** (title, year, DOI) for every answer
 
 Typical questions:
 
-- *Which dataset does paper P012 use?*
-- *Which papers evaluate on TeleQnA?*
+- *Which dataset does paper [P12] use?*
+- *Which papers evaluate on Benchmark?*
 - *On which page is the latency measured?*
 
 Everything runs locally. No API key and no internet connection are needed after the first model download.
