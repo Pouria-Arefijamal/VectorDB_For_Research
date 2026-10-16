@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:1200px;height:627px;background:#0f172a;color:#e2e8f0;font-family:"DejaVu Sans","Liberation Sans",Arial,sans-serif;padding:44px 56px;position:relative;overflow:hidden}
+.glow{position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(#14b8a655,transparent 65%)}
+h1{font-size:44px;line-height:1.15;font-weight:700;letter-spacing:-.5px;max-width:960px}
+h1 span{color:#2dd4bf}
+.sub{margin-top:12px;font-size:21px;color:#94a3b8}
+.flow{display:flex;align-items:center;gap:14px;margin-top:34px}
+.box{flex:1;background:#1e293b;border:1.5px solid #334155;border-radius:14px;padding:16px 18px;min-height:112px}
+.box b{display:block;font-size:20px;color:#f8fafc;margin-bottom:6px}
+.box small{font-size:16px;color:#94a3b8;line-height:1.35;display:block}
+.box.hl{border-color:#2dd4bf;background:#0f2a2e}
+.arrow{font-size:30px;color:#2dd4bf}
+.res{margin-top:26px;background:#020617;border:1.5px solid #334155;border-left:5px solid #2dd4bf;border-radius:12px;padding:16px 22px;font-family:"DejaVu Sans Mono",monospace}
+.q{font-size:18px;color:#2dd4bf}
+.r{font-size:17px;color:#cbd5e1;margin-top:7px;line-height:1.4}
+.r em{font-style:normal;color:#fbbf24}
+.foot{position:absolute;left:56px;right:56px;bottom:26px;display:flex;justify-content:space-between;font-size:17px;color:#64748b}
+</style></head><body><div class="glow"></div>
+<h1>Ask 197 research papers a question.<br><span>Get the exact page back.</span></h1>
+<div class="sub">A local vector database for my literature review. No API, no cloud.</div>
+<div class="flow">
+<div class="box"><b>PDFs + .md notes</b><small>read page by page</small></div><div class="arrow">›</div>
+<div class="box"><b>Chunks</b><small>300 words, each tied to one page</small></div><div class="arrow">›</div>
+<div class="box"><b>Embeddings</b><small>bge-small, batched on GPU</small></div><div class="arrow">›</div>
+<div class="box hl"><b>Chroma</b><small>HNSW index + SQLite metadata</small></div>
+</div>
+<div class="res"><div class="q">$ search.py "which dataset is used" --paper P001</div>
+<div class="r">P001 · 5G INSTRUCT Forge (2025) · <em>page 8</em> · DOI 10.1109/TCCN.2024.3516055<br>"…a dataset named OAI Instruct… 87,719 training entries…"</div></div>
+<div class="foot"><span>7,568 page chunks · 4,137 summary sections</span><span>Python · PyMuPDF · sentence-transformers · ChromaDB</span></div>
+</body></html>
